@@ -1,4 +1,4 @@
-#include "main.hpp"
+#include <cpp_lib_personal/main.hpp>
 
 std::vector<std::string> split(std::string& s, const std::string& delimiter) {
     std::vector<std::string> tokens;
