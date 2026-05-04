@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 project(cpp_lib_personal)
 
 add_library(cpp_lib_personal
-  src/test.cpp
+  src/main.cpp
 )
 
 target_include_directories(cpp_lib_personal
