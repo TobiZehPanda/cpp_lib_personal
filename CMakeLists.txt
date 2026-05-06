@@ -10,4 +10,4 @@ target_include_directories(cpp_lib_personal
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-target_compile_features(cpp_lib_personal PUBLIC cxx_std_20)
+target_compile_features(cpp_lib_personal PUBLIC cxx_std_17)
