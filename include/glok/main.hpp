@@ -1,5 +1,5 @@
-#ifndef CPP_LIB_PERSONAL
-#define CPP_LIB_PERSONAL
+#ifndef GLOK
+#define GLOK
 
 #include <string>
 #include <vector>
