@@ -21,6 +21,15 @@ struct DoubleLinkedList {
   Node<T>* tail;
 
   DoubleLinkedList() : head(nullptr), tail(nullptr) {};
+  ~DoubleLinkedList() {
+    Node<T>* curr = head;
+    while(curr) {
+      Node<T>* next = curr->next;
+      delete curr;
+      curr = next;
+    }
+    head == tail == nullptr;
+  }
 
     void prepend(T data) {
       Node<T>* newNode = new Node(data);
