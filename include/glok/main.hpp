@@ -1,6 +1,7 @@
 #ifndef GLOK
 #define GLOK
 
+#include <iostream>
 #include <string>
 #include <vector>
 #include <filesystem>
@@ -66,18 +67,22 @@ struct DoubleLinkedList {
 
     void print_forward() {
       Node<T>* curr = head;
+      std::cout << "List: ";
       while(curr) {
-        curr->animal->speak();
+        std::cout << "[" << curr->data << "] -> ";
         curr = curr->next;
       }
+      std::cout << "NULL" << std::endl;
     }
 
     void print_backwards() {
       Node<T>* curr = tail;
+      std::cout << "List: ";
       while(curr) {
-        curr->animal->speak();
+        std::cout << "[" << curr->data << "] -> ";
         curr = curr->prev;
       }
+      std::cout << "NULL" << std::endl;
     }
 };
 
