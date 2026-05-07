@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.20)
-project(cpp_lib_personal)
+project(glok)
 
-add_library(cpp_lib_personal
+add_library(glok
   src/main.cpp
 )
 
-target_include_directories(cpp_lib_personal
+target_include_directories(glok
   PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-target_compile_features(cpp_lib_personal PUBLIC cxx_std_17)
+target_compile_features(glok PUBLIC cxx_std_17)
